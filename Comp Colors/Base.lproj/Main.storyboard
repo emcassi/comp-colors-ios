@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -67,26 +68,6 @@
                                     <constraint firstAttribute="trailing" secondItem="FOF-HF-u92" secondAttribute="trailing" id="gtY-i4-DO4"/>
                                 </constraints>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="AIh-LO-9M6">
-                                <rect key="frame" x="128.33333333333331" y="713" width="136.33333333333331" height="55"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9Y-cc-6mC">
-                                        <rect key="frame" x="0.0" y="0.0" width="136.33333333333334" height="55"/>
-                                        <color key="tintColor" name="AccentColor"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="New Swatch">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
-                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="newSwatchTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WXW-cJ-mOW"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="L5z-mt-Fni"/>
-                                </constraints>
-                            </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comp Colors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQw-IP-e7T">
                                 <rect key="frame" x="73.333333333333329" y="109" width="246.66666666666669" height="49"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="41"/>
@@ -96,9 +77,31 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generate a Swatch Now" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUY-cs-hCT" userLabel="EmptyLabel">
                                 <rect key="frame" x="25" y="377" width="343" height="98"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="41"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="AIh-LO-9M6">
+                                <rect key="frame" x="121.66666666666669" y="713" width="150" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9Y-cc-6mC">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="55"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="New Swatch">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="newSwatchTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WXW-cJ-mOW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="L5z-mt-Fni"/>
+                                    <constraint firstAttribute="width" constant="150" id="d4i-0x-7TL"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="bg"/>
@@ -121,6 +124,7 @@
                         <outlet property="colorView3" destination="l9o-Ku-Ui5" id="u8i-5f-XvS"/>
                         <outlet property="colorView4" destination="e1c-la-jZk" id="FHo-q5-wOF"/>
                         <outlet property="emptyLabel" destination="xUY-cs-hCT" id="gVN-Hu-BsC"/>
+                        <outlet property="newSwatchButton" destination="X9Y-cc-6mC" id="M42-1I-cL3"/>
                         <outlet property="titleLabel" destination="nQw-IP-e7T" id="rt3-yY-4Jy"/>
                     </connections>
                 </viewController>
@@ -131,10 +135,10 @@
     </scenes>
     <resources>
         <namedColor name="AccentColor">
-            <color red="0.26634327160477445" green="1" blue="0.58597813388554565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.26600000262260437" green="1" blue="0.58600002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="bg">
-            <color red="0.5337325173234595" green="0.59938930149089453" blue="0.77581448025173616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.5339999794960022" green="0.59899997711181641" blue="0.77600002288818359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

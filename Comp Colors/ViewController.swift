@@ -16,12 +16,14 @@ class ViewController: UIViewController {
     
     var currentColors: [ColorData] = []
     
+    @IBOutlet weak var newSwatchButton: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var emptyLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        newSwatchButton.backgroundColor = UIColor(named: "AccentColor")
     }
  
     
@@ -56,8 +58,6 @@ class ViewController: UIViewController {
                     }
                 }
                 task.resume()
-            } else {
-                print("Cannot form url")
             }
         }
     }
