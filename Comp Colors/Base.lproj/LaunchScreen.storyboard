@@ -1,7 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,15 +12,41 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="emcassi logo white" translatesAutoresizingMaskIntoConstraints="NO" id="rYI-0z-Dga">
+                                <rect key="frame" x="146.66666666666666" y="718" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="1ub-8j-PM7"/>
+                                    <constraint firstAttribute="height" constant="100" id="hxm-XO-cMj"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="logo-black" translatesAutoresizingMaskIntoConstraints="NO" id="KQe-wf-ill">
+                                <rect key="frame" x="0.0" y="-86" width="393" height="1024"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.73440459280303028" green="0.4641199936924687" blue="0.5472784342529835" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="KQe-wf-ill" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="30y-6I-HOQ"/>
+                            <constraint firstItem="KQe-wf-ill" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4Ii-Vn-QDi"/>
+                            <constraint firstItem="KQe-wf-ill" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="4dZ-x5-7YQ"/>
+                            <constraint firstItem="rYI-0z-Dga" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="5Li-KG-rez"/>
+                            <constraint firstItem="rYI-0z-Dga" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="6MW-j4-h2R"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KQe-wf-ill" secondAttribute="trailing" id="UDU-lu-c5w"/>
+                            <constraint firstItem="KQe-wf-ill" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="bw4-Bk-5Rd"/>
+                            <constraint firstItem="KQe-wf-ill" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="emK-Ad-txr"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="emcassi logo white" width="946" height="946"/>
+        <image name="logo-black" width="1024" height="1024"/>
+    </resources>
 </document>

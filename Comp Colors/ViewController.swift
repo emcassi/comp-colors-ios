@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     
     var currentColors: [ColorData] = []
     
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var emptyLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -34,7 +37,12 @@ class ViewController: UIViewController {
     func performRequest(){
         let startingColor = getRandomColor()
         if let startingColorComps = startingColor.cgColor.components {
-            if let url = URL(string: "https://www.thecolorapi.com/scheme?rgb=(\(startingColorComps[0]),\(startingColorComps[1]),\(startingColorComps[2])&format=json&mode=quad&count=4") {
+            
+            let modes = ["analogic", "analogic-complement", "quad"]
+            
+            let modeIndex = Int.random(in: 0...2)
+            
+            if let url = URL(string: "https://www.thecolorapi.com/scheme?rgb=(\(startingColorComps[0]),\(startingColorComps[1]),\(startingColorComps[2])&format=json&mode=\(modes[modeIndex])&count=4") {
                 let session = URLSession(configuration: .default)
                 
                 let task = session.dataTask(with: url) { data, response, error in
@@ -61,6 +69,9 @@ class ViewController: UIViewController {
             currentColors = decodedData.colors
             
             DispatchQueue.main.async {
+                if !self.emptyLabel.isHidden {
+                    self.emptyLabel.isHidden = true
+                }
                 self.colorView1.backgroundColor = UIColor(red: CGFloat(self.currentColors[0].rgb.r) / 255, green: CGFloat(self.currentColors[0].rgb.g) / 255, blue: CGFloat(self.currentColors[0].rgb.b) / 255, alpha: 1)
                 self.colorView2.backgroundColor = UIColor(red: CGFloat(self.currentColors[1].rgb.r) / 255, green: CGFloat(self.currentColors[1].rgb.g) / 255, blue: CGFloat(self.currentColors[1].rgb.b) / 255, alpha: 1)
                 self.colorView3.backgroundColor = UIColor(red: CGFloat(self.currentColors[2].rgb.r) / 255, green: CGFloat(self.currentColors[2].rgb.g) / 255, blue: CGFloat(self.currentColors[2].rgb.b) / 255, alpha: 1)
