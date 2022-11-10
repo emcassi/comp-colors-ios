@@ -1,24 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Comp_Colors" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="S01-qf-ni1">
+                                <rect key="frame" x="21.666666666666657" y="251" width="350" height="350"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FOF-HF-u92">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="175"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ouU-Ak-hTJ" customClass="ColorView" customModule="Comp_Colors" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="175" id="KLN-i2-aIP"/>
+                                                    <constraint firstAttribute="height" constant="175" id="axt-Z1-Zbo"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hp6-3y-5N8" customClass="ColorView" customModule="Comp_Colors" customModuleProvider="target">
+                                                <rect key="frame" x="175" y="0.0" width="175" height="175"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="175" id="Ong-aI-bcg"/>
+                                                    <constraint firstAttribute="height" constant="175" id="lL0-HI-j2C"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nxt-ZG-xtG">
+                                        <rect key="frame" x="0.0" y="175" width="350" height="175"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l9o-Ku-Ui5" customClass="ColorView" customModule="Comp_Colors" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="175" height="175"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="175" id="P9P-uH-YPo"/>
+                                                    <constraint firstAttribute="height" constant="175" id="Yhf-Tj-UA5"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1c-la-jZk" customClass="ColorView" customModule="Comp_Colors" customModuleProvider="target">
+                                                <rect key="frame" x="175" y="0.0" width="175" height="175"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="175" id="cLz-T8-hq1"/>
+                                                    <constraint firstAttribute="height" constant="175" id="quL-Of-djd"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="FOF-HF-u92" firstAttribute="leading" secondItem="S01-qf-ni1" secondAttribute="leading" id="GIv-SR-7hH"/>
+                                    <constraint firstAttribute="trailing" secondItem="FOF-HF-u92" secondAttribute="trailing" id="gtY-i4-DO4"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="AIh-LO-9M6">
+                                <rect key="frame" x="47.333333333333343" y="713" width="298.33333333333326" height="55"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffP-b0-W6T">
+                                        <rect key="frame" x="0.0" y="0.0" width="139.66666666666666" height="55"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Save Swatch">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="newSwatchTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PXv-4t-Vnp"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9Y-cc-6mC">
+                                        <rect key="frame" x="158.66666666666669" y="0.0" width="139.66666666666669" height="55"/>
+                                        <color key="tintColor" name="AccentColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="New Swatch">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="19"/>
+                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="newSwatchTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WXW-cJ-mOW"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="L5z-mt-Fni"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comp Colors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nQw-IP-e7T">
+                                <rect key="frame" x="73.333333333333329" y="134" width="246.66666666666669" height="49"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="41"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="bg"/>
+                        <constraints>
+                            <constraint firstItem="S01-qf-ni1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0sV-tL-fKi"/>
+                            <constraint firstItem="nQw-IP-e7T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="IIT-f8-djK"/>
+                            <constraint firstItem="AIh-LO-9M6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SOj-b3-L8I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AIh-LO-9M6" secondAttribute="bottom" constant="50" id="upS-oH-bcm"/>
+                            <constraint firstItem="nQw-IP-e7T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vBR-wG-Ivv"/>
+                            <constraint firstItem="S01-qf-ni1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vIr-ub-Tuj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="colorView1" destination="ouU-Ak-hTJ" id="oG5-nC-A9K"/>
+                        <outlet property="colorView2" destination="Hp6-3y-5N8" id="cEX-Wy-Azx"/>
+                        <outlet property="colorView3" destination="l9o-Ku-Ui5" id="u8i-5f-XvS"/>
+                        <outlet property="colorView4" destination="e1c-la-jZk" id="FHo-q5-wOF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-95.419847328244273" y="-27.464788732394368"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.26634327160477445" green="1" blue="0.58597813388554565" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="bg">
+            <color red="0.5337325173234595" green="0.59938930149089453" blue="0.77581448025173616" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
