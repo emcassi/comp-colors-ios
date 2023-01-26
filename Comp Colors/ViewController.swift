@@ -24,6 +24,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         newSwatchButton.backgroundColor = UIColor(named: "AccentColor")
+        newSwatchButton.layer.cornerRadius = 15
     }
  
     

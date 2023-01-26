@@ -74,19 +74,19 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generate a Swatch Now" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUY-cs-hCT" userLabel="EmptyLabel">
-                                <rect key="frame" x="25" y="377" width="343" height="98"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Generate a Swatch Now" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xUY-cs-hCT" userLabel="EmptyLabel">
+                                <rect key="frame" x="25" y="407" width="326" height="95"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="AIh-LO-9M6">
-                                <rect key="frame" x="121.66666666666669" y="713" width="150" height="55"/>
+                                <rect key="frame" x="121.66666666666669" y="723" width="150" height="45"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X9Y-cc-6mC">
-                                        <rect key="frame" x="0.0" y="0.0" width="150" height="55"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="45"/>
                                         <color key="backgroundColor" name="AccentColor"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                         <color key="tintColor" name="AccentColor"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="New Swatch">
@@ -98,7 +98,7 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="55" id="L5z-mt-Fni"/>
+                                    <constraint firstAttribute="height" constant="45" id="L5z-mt-Fni"/>
                                     <constraint firstAttribute="width" constant="150" id="d4i-0x-7TL"/>
                                 </constraints>
                             </stackView>
@@ -107,12 +107,12 @@
                         <color key="backgroundColor" name="bg"/>
                         <constraints>
                             <constraint firstItem="S01-qf-ni1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0sV-tL-fKi"/>
-                            <constraint firstItem="xUY-cs-hCT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="Coa-Xd-6by"/>
+                            <constraint firstItem="xUY-cs-hCT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="Coa-Xd-6by"/>
                             <constraint firstItem="nQw-IP-e7T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="IIT-f8-djK"/>
                             <constraint firstItem="AIh-LO-9M6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SOj-b3-L8I"/>
                             <constraint firstItem="xUY-cs-hCT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nZS-W1-aES"/>
                             <constraint firstItem="xUY-cs-hCT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t3a-bG-Gcg"/>
-                            <constraint firstAttribute="trailing" secondItem="xUY-cs-hCT" secondAttribute="trailing" constant="25" id="umq-fm-C0q"/>
+                            <constraint firstAttribute="trailing" secondItem="xUY-cs-hCT" secondAttribute="trailing" constant="50" id="umq-fm-C0q"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AIh-LO-9M6" secondAttribute="bottom" constant="50" id="upS-oH-bcm"/>
                             <constraint firstItem="nQw-IP-e7T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vBR-wG-Ivv"/>
                             <constraint firstItem="S01-qf-ni1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vIr-ub-Tuj"/>
@@ -138,7 +138,7 @@
             <color red="0.26600000262260437" green="1" blue="0.58600002527236938" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="bg">
-            <color red="0.5339999794960022" green="0.59899997711181641" blue="0.77600002288818359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.69720338168993001" green="0.70977235694238194" blue="0.76154404878616333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>
