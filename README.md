@@ -1,5 +1,5 @@
 # comp-colors-ios
-Simple iOS app that allows you to generate complementary colors via The Color API. 
+Simple iOS app that allows you to generate complementary colors via [The Color API](https://www.thecolorapi.com/). 
 
 <br/>
 <img width=200 src="https://user-images.githubusercontent.com/93994200/214763899-e236fdc5-5f1a-4b31-bb97-05bba082ccf5.png"/>
